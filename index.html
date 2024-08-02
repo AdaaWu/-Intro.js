@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro.js Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
+  <style>
+    .step {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div id="step1" class="step">
+  Step 1: Welcome to our application!
+</div>
+
+<div id="step2" class="step">
+  Step 2: Here is some important information.
+</div>
+
+<div id="step3" class="step">
+  Step 3: Don't forget to check out this feature.
+</div>
+
+<div id="step4" class="step">
+    Step 4: ha ha ha.
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    introJs().setOptions({
+      steps: [
+        {
+          intro: "Welcome to our application! This is a quick tour."
+        },
+        {
+          element: '#step1',
+          intro: "Step 1: Welcome to our application!",
+          position: 'right'
+        },
+        {
+          element: '#step2',
+          intro: "Step 2: Here is some important information.",
+          position: 'left'
+        },
+        {
+          element: '#step3',
+          intro: "Step 3: Don't forget to check out this feature.",
+          position: 'bottom'
+        },
+        {
+          element: '#step4',
+          intro: "Step 4: ha ha ha.",
+          position: 'bottom'
+        }
+      ]
+    }).start();
+  });
+</script>
+
+</body>
+</html>
