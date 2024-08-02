@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator Game</title>
+    <style>
+        #elevator { width: 100px; height: 100px; background-color: #333; position: absolute; top: 500px; }
+        .button { width: 50px; height: 50px; background-color: #555; margin: 10px; cursor: pointer; display: inline-block; }
+        .button.active { background-color: #ff0000; }
+    </style>
+</head>
+<body>
+    <div id="elevator"></div>
+    <div class="button" data-floor="1">1</div>
+    <div class="button" data-floor="2">2</div>
+    <div class="button" data-floor="3">3</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
